@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <!-- stylesheet -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    
+    <!-- header start -->
+    <header>
+        <h2 class="header-title">Cash Wizard <img class="img-icon" src="media/icons/money_icon.jpeg" alt=""></h2>
+    </header>
+    <!-- header end -->
+    <br>
+    <!-- main start -->
+    <main>
+        <section class="container">
+           <div class="row">
+                <div class="col-12 col-lg-7">
+                    <img class="img-fluid img-money" src="media/images/dollar_counting.jpeg" alt="">
+                </div>
+                <div class="col-12 col-lg-5 calculate-section">
+                    <div>
+                        <div>
+                            <h4>Income</h4>
+                            <div>
+                                <p>Income: <input class="input-field" type="text"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Expenses</h4>
+                            <p>Food: <input class="input-field" type="text"></p>
+                            <p>Rent: <input class="input-field" type="text"></p>
+                            <p>Clothes: <input class="input-field" type="text"></p>
+                        </div>
+                        <button class="bg-info text-white border-0 px-3 py-1 rounded">Calculate</button>
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <h4>Total Expenses: <span>5500</span></h4>
+                            <h4>Balance: <span>4500</span></h4>
+                        </div>
+                        <div>
+                            <p>Save: <input class="input-field" type="text">  %  <button class="bg-info text-white border-0 px-3 py-1 rounded">Save</button></p>
+                        </div>
+                        <div>
+                            <h4>Saving Amount: <span>2000</span></h4>
+                            <h4>Remaining Balance: <span>2500</span></h4>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+    </main>
+    <!-- main end -->
+    <!-- javascript -->
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
 </body>
 </html>
