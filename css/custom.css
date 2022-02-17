@@ -32,3 +32,11 @@ body{
 #save-button{
     margin-left: 20px;
 }
+.error-handling{
+    display: none;
+}
+#error-number{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
