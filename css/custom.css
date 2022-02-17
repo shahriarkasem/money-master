@@ -8,8 +8,9 @@ body{
     margin-top: 15px;
 }
 .img-icon{
-    height: 22px;
-    width: 22px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
 }
 /* main section */
 .img-money{

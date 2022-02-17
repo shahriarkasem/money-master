@@ -14,7 +14,7 @@
 <body>
     <!-- header start -->
     <header>
-        <h2 class="header-title">Cash Wizard <img class="img-icon" src="media/icons/money_icon.jpeg" alt=""></h2>
+        <h2 class="header-title">Cash Wizard<img class="img-icon" src="media/icons/dollar_coin.jpeg" alt=""></h2>
     </header>
     <!-- header end -->
     <br>
@@ -22,17 +22,21 @@
     <main>
         <section class="container">
            <div class="row">
+               <!-- img -->
                 <div class="col-12 col-lg-7">
                     <img class="img-fluid img-money" src="media/images/dollar_counting.jpeg" alt="">
                 </div>
+                <!-- calculation -->
                 <div class="col-12 col-lg-5 calculate-section">
                     <div>
+                        <!-- income input -->
                         <div>
                             <h4>Income</h4>
                             <div>
                                 <p>Income: <input id="income" class="input-field" type="text"></p>
                             </div>
                         </div>
+                        <!-- expense input -->
                         <div>
                             <h4>Expenses</h4>
                             <p>Food: <input id="food-expense" class="input-field" type="text"></p>
@@ -42,14 +46,17 @@
                         <button id="calculate-button" class="bg-info text-white border-0 px-3 py-1 rounded">Calculate</button>
                     </div>
                     <br>
+                    <!-- total expense and remaining balance -->
                     <div>
                         <div>
-                            <h4>Total Expenses: <span>5500</span></h4>
-                            <h4>Balance: <span>4500</span></h4>
+                            <h4>Total Expenses: <span id="total-expense">5500</span></h4>
+                            <h4>Balance: <span id="total-balance">4500</span></h4>
                         </div>
+                        <br>
                         <div>
                             <p>Save: <input id="save-money" class="input-field" type="text">  %  <button id="save-button" class="bg-info text-white border-0 px-3 py-1 rounded">Save</button></p>
                         </div>
+                        <br>
                         <div>
                             <h4>Saving Amount: <span>2000</span></h4>
                             <h4>Remaining Balance: <span>2500</span></h4>
