@@ -77,10 +77,10 @@ document.getElementById('save-button').addEventListener('click', function(){
     const remainingBalance = balanceAmount - newSavings;
 
     remainingBalanceField.innerText = remainingBalance;
-        document.getElementById('error-number').style.display = 'none';
+        document.getElementById('error-number-2').style.display = 'none';
     }
     else{
-        document.getElementById('error-number').style.display = 'block';
+        document.getElementById('error-number-2').style.display = 'block';
     }
     
 })
