@@ -74,10 +74,9 @@ document.getElementById('save-button').addEventListener('click', function(){
     const remainingBalanceText = remainingBalanceField.innerText;
     const remainingBalanceAmount = parseFloat(remainingBalanceText);
 
-    const remainingBalance = balanceAmount + remainingBalanceAmount;
-    const totalRemainingBalance = remainingBalance - newSavings ;
+    const remainingBalance = balanceAmount - newSavings;
 
-    remainingBalanceField.innerText = totalRemainingBalance;
+    remainingBalanceField.innerText = remainingBalance;
         document.getElementById('error-number').style.display = 'none';
     }
     else{
