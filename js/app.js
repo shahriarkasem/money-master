@@ -46,3 +46,41 @@ document.getElementById('calculate-button').addEventListener('click', function()
 })
 
 // savings section
+document.getElementById('save-button').addEventListener('click', function(){
+    // income
+    const incomeField = document.getElementById('income');
+    const incomeAmountText = incomeField.value;
+    const incomeAmount = parseFloat(incomeAmountText);
+    incomeField.value = '';
+    // console.log(incomeAmount);
+
+    // save percentage
+    const saveMoneyField = document.getElementById('save-money');
+    const saveMoneyText = saveMoneyField.value;
+    const saveMoneyPercentage = parseFloat(saveMoneyText);
+    saveMoneyField.value = '';
+
+    // percentage
+    const newSavings = (incomeAmount/100)*saveMoneyPercentage;
+
+     // savings
+     const saveAmountField = document.getElementById('total-saved');
+     const saveAmountText = saveAmountField.innerText;
+     const saveAmount = parseFloat(saveAmountText);
+     saveAmountField.innerText = '';
+     const totalSavings = newSavings + saveAmount;
+
+    //  final calculation
+     saveAmountField.innerText = totalSavings;
+
+    // debugger;
+    //  remaining balance
+    const remainingBalanceField = document.getElementById('total-remaining-balance');
+    const remainingBalanceText = remainingBalanceField.innerText;
+    const remainingBalanceAmount = parseFloat(remainingBalanceText);
+
+    const remainingBalance = incomeAmount - newSavings;
+    const totalRemainingBalance = remainingBalance + remainingBalanceAmount;
+
+    remainingBalanceField.innerText = totalRemainingBalance;
+})
