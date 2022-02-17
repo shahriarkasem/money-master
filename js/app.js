@@ -73,14 +73,18 @@ document.getElementById('save-button').addEventListener('click', function(){
     //  final calculation
      saveAmountField.innerText = totalSavings;
 
+    //  balance
+    const totalBalanceField = document.getElementById('total-balance');
+    const balanceText = totalBalanceField.innerText;
+    const balanceAmount = parseFloat(balanceText);
     // debugger;
     //  remaining balance
     const remainingBalanceField = document.getElementById('total-remaining-balance');
     const remainingBalanceText = remainingBalanceField.innerText;
     const remainingBalanceAmount = parseFloat(remainingBalanceText);
 
-    const remainingBalance = incomeAmount - newSavings;
-    const totalRemainingBalance = remainingBalance + remainingBalanceAmount;
+    const remainingBalance = balanceAmount + remainingBalanceAmount;
+    const totalRemainingBalance = remainingBalance - newSavings ;
 
     remainingBalanceField.innerText = totalRemainingBalance;
 })
